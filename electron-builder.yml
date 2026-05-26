@@ -1,0 +1,24 @@
+appId: com.harmonichemispheres.vidclips
+productName: vidclips
+copyright: Copyright © 2026
+directories:
+  buildResources: resources
+  output: dist
+files:
+  - "!**/.vscode/*"
+  - "!src/*"
+  - "!electron.vite.config.{js,ts,mjs,cjs}"
+  - "!{.eslintrc,.prettierrc,tsconfig.json,tsconfig.node.json,tsconfig.web.json}"
+  - "!{.env,.env.*,README.md,LICENSE}"
+asarUnpack:
+  - "node_modules/better-sqlite3/**"
+  - "node_modules/ffmpeg-static/**"
+  - "node_modules/ffprobe-static/**"
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+  artifactName: vidclips-${version}-portable.${ext}
+portable:
+  artifactName: vidclips-${version}-portable.${ext}

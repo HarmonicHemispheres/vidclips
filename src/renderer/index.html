@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vidclips</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: blob: vidclips:; media-src 'self' vidclips: blob:; img-src 'self' vidclips: data: blob:; connect-src 'self' ws: http://localhost:* vidclips:;" />
+  </head>
+  <body class="h-screen w-screen overflow-hidden bg-background text-foreground">
+    <div id="root" class="h-full w-full"></div>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>
